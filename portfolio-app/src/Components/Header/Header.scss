@@ -125,17 +125,17 @@
       visibility: visible;
       display: block;
       right: 0;
-    //   margin: 15px;
+      //   margin: 15px;
       height: 91%;
       width: 100%;
       max-width: 93%;
       .mbfooter {
         border-top: 1px solid var(--page-bg-color);
         height: 49px;
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-         padding-left: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 18px;
         .findme {
           color: var(--secondary-gray);
           font-size: 16px;
@@ -144,17 +144,17 @@
           line-height: normal;
           align-items: center;
         }
-        .socialmedia{
-display: flex;
-.socialIcon{
-    height: 49px;
-    padding: 11px 14px;
-    color:var( --bg-overlap) ;
-    border-left: 1px solid var(--page-bg-color);
-}
-.socialIcon:hover{
-    color: var(--secondary-gray)
-}
+        .socialmedia {
+          display: flex;
+          .socialIcon {
+            height: 49px;
+            padding: 11px 14px;
+            color: var(--bg-overlap);
+            border-left: 1px solid var(--page-bg-color);
+          }
+          .socialIcon:hover {
+            color: var(--secondary-gray);
+          }
         }
       }
       .mobilecontainer {
@@ -204,7 +204,6 @@ display: flex;
             }
           }
         }
-
       }
     }
   }
