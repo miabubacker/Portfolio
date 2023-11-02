@@ -1,11 +1,18 @@
+import Mainpage from './Components/MainPage/';
 import './Style/Main.scss';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 function App() {
   return (
-    <div className="App">
-<button className='btn ghost'>start-game</button>
-    </div>
+    <>
+ <BrowserRouter>
+    <Routes>
+        <Route path='*' element={<Mainpage/>}/>
+    </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
 export default App;
+
+
