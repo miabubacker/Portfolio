@@ -1,7 +1,7 @@
 
 .MainPage_container{
     margin: 69px;
-     background: var(--page-bg-color);
+    //  background: var(--page-bg-color);
      border-radius: 8px;
 border: 1px solid var(--page-bg-color);
 background:var(--primary-middle);
@@ -13,4 +13,9 @@ align-items: center;
 color: var(--secondary-white);
 justify-content: center;
 }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .MainPage_container{
+        margin: 15px;
+    }
 }

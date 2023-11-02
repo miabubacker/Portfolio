@@ -19,6 +19,7 @@
     "redux": "^4.2.1",
     "redux-actions": "^3.0.0",
     "redux-thunk": "^2.4.2",
+    "remixicon-react": "^1.0.0",
     "reselect": "^4.1.8",
     "sass": "^1.69.5",
     "web-vitals": "^2.1.4"
