@@ -1,0 +1,59 @@
+@use "../Base/color" as *;
+@use "./typography" as *;
+
+.btn {
+  display: inline-flex;
+  padding: 10px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 8px;
+  &.primary {
+    color: var(--primary-dark);
+    text-align: right;
+    font-family: var(--font-family);
+    font-size: var(--code-snippets);
+    font-weight: var(--btn-font-weight);
+    font-style: var(--btn-fontstyle);
+    border-radius: 8px;
+    background: var(--accent-gold);
+  }
+  &.primary:hover {
+    color: var(--primary-dark);
+    font-family: var(--font-family);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    font-style: var(--btn-fontstyle);
+    text-align: right;
+    border-radius: 8px;
+    background: var(--acent-gold-hover);
+    border-radius: 8px;
+  }
+  &.default{
+    color: var(--secondary-white);
+text-align: right;
+font-family: var(--font-family);
+font-size: var(--code-snippets);
+font-weight: var(--btn-font-weight);
+font-style: var(--btn-fontstyle);
+background: var(--btn-defaultbg-color);
+  }
+  &.default:hover{
+    background: var(--btn-defaultbg-Hover-color);
+  }
+  &.ghost{
+    color: var(--secondary-white);
+    text-align: right;
+    font-family: var(--font-family);
+    font-size: var(--code-snippets);
+    font-weight: var(--btn-font-weight);
+    font-style: var(--btn-fontstyle);
+    border-radius: 8px;
+    background: var(--btn-ghost);
+    border: 1px solid #FFF;
+  }
+  &.ghost:hover{
+     opacity: 0.5555;
+  }
+}
