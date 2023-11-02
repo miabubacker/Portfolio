@@ -18,6 +18,7 @@ const mapStateToProps = ({
     MainPagereducer,
 }) => ({
     loading: _get(MainPagereducer, 'loading'),
+    headers:_get(MainPagereducer, 'headers'),
 
 });
 
