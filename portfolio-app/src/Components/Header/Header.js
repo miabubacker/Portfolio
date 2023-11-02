@@ -54,6 +54,7 @@ export default function Header(props) {
         </div>
         <MenuFillIcon
           className="hamburger"
+          size={16}
           onClick={(e) => {
             ViewDrawer(e);
           }}
@@ -75,6 +76,8 @@ export default function Header(props) {
               onClick={(e) => {
                 ViewDrawer(e);
               }}
+              size={16}
+              
             />
             </div>
           </div>
@@ -97,9 +100,9 @@ export default function Header(props) {
           <div  className="mbfooter">
             <div className="findme">find me in:</div>
             <div className="socialmedia">
-                <div className="socialIcon"><TwitterFillIcon/></div>
-                <div className="socialIcon"><FacebookFillIcon/></div>
-                <div className="socialIcon"><GithubFillIcon/></div>
+                <div className="socialIcon"><TwitterFillIcon /></div>
+                <div className="socialIcon"><FacebookFillIcon /></div>
+                <div className="socialIcon"><GithubFillIcon /></div>
             </div>
           </div>
         </div>

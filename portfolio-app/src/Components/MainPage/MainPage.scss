@@ -1,21 +1,19 @@
+.MainPage_container {
+  margin: 69px;
+  border-radius: 8px;
+  border: 1px solid var(--page-bg-color);
+  background: var(--primary-middle);
 
-.MainPage_container{
-    margin: 69px;
-    //  background: var(--page-bg-color);
-     border-radius: 8px;
-border: 1px solid var(--page-bg-color);
-background:var(--primary-middle);
-
-.loading{
-display: flex;
-height: 100px;
-align-items: center;
-color: var(--secondary-white);
-justify-content: center;
-}
+  .loading {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    color: var(--secondary-white);
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 425px) {
-    .MainPage_container{
-        margin: 15px;
-    }
+  .MainPage_container {
+    margin: 15px;
+  }
 }
