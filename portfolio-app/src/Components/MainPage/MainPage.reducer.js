@@ -7,7 +7,8 @@ const initialState = {
   dashboard:[],
    home:[],
    about:[],
-   project:[]
+   project:[],
+   headers:['_hello','_about-me','_projects']
 };
 
 export default handleActions(

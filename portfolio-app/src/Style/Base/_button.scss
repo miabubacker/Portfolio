@@ -50,7 +50,7 @@ background: var(--btn-defaultbg-color);
     font-weight: var(--btn-font-weight);
     font-style: var(--btn-fontstyle);
     border-radius: 8px;
-    background: var(--btn-ghost);
+    background: transparent;
     border: 1px solid #FFF;
   }
   &.ghost:hover{
