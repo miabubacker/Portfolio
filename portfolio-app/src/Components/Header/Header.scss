@@ -99,6 +99,9 @@
 // }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
+  .Home_container {
+    padding: 100px 10px;
+  }
   .headermain {
     // margin: 15px;
     .header_container {
@@ -128,7 +131,7 @@
       display: block;
       right: 0;
       //   margin: 15px;
-      height: 91%;
+      height: 97%;
       width: 100%;
       max-width: 93%;
       .mbfooter {
@@ -159,10 +162,11 @@
           }
         }
       }
+     
       .mobilecontainer {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 96vh;
         justify-content: space-between;
         .mbheader_container {
           display: flex;
