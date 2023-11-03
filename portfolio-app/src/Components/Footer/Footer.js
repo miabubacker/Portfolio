@@ -11,10 +11,10 @@ export default function Footer() {
         <div className="footer footer_socialLinks">
           <div className="footer_socialLogo">
             <h4>find me in:</h4>
-            <TwitterFillIcon className="footer_socialLogo_twitter" size={24}
-            />
-            <FacebookFillIcon className="footer_socialLogo_Facebook" size={24}
-            />
+              <TwitterFillIcon className="footer_socialLogo_twitter" size={24}
+              />
+              <FacebookFillIcon className="footer_socialLogo_Facebook" size={24}
+              />
           </div>
           <div className="footer_githubID" >
             <h4>@username</h4>
