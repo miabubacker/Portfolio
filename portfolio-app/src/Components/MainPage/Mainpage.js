@@ -20,12 +20,12 @@ export default function Mainpage(props) {
             <section className="MainPage_container">
                 {loading ?
                     <>
-                        {/* <Header {...props} /><Routes>
+                        <Header {...props} /><Routes>
                             <Route path="/" element={<Home {...props} />} />
                             <Route path="/_about-me" element={<About {...props} />} />
                             <Route path="/_projects" element={<Project {...props} />} />
                             <Route path="/contact" element={<Contact {...props} />} />
-                        </Routes> */}
+                        </Routes>
                         <Footer {...props} />
                     </>
                     : <div className="loading">Loading...</div>}
