@@ -13,9 +13,16 @@ export default function Header(props) {
   const [selectPage, setSelectPage] = useState(0);
   const [drawer, setDrawer] = useState(false);
   const viewPage = (heder, index) => {
+     if(heder==='_hello'){
+      navigate('/');
+      setSelectPage(index);
+    setDrawer(false)
+     }
+     else{
     navigate(`/${heder}`);
     setSelectPage(index);
     setDrawer(false)
+     }
   };
   const ViewDrawer = (event) => {
     event.stopPropagation();

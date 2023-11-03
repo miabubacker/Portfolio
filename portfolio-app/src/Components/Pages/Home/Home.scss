@@ -1,0 +1,68 @@
+.Home_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+align-items: center;
+  .infoSection {
+    .top_component {
+      .Welcome {
+        color: var(--welcome-text-color);
+        font-size: var(--wlecome-size);
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+      }
+      .name_header {
+        color: var(--welcome-text-color);
+        font-size: var(--headline-text);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 517px;
+      }
+
+      .domain_name {
+        color: var(--secondary-lavender);
+        font-size: var(--subheaderline-text);
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+      }
+    }
+    .lower_component{
+        margin-top: 81.07px;
+        .game_continue,.github_name{
+            color: var(--secondary-gray);
+font-size: var(--lables);
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+margin-bottom: 9.61px;
+        }
+        .gitlink{
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+ color: var(--secondary-white);
+ max-width: 490px;
+&_const{
+    color: var(--secondary-lavender);
+}
+&_link{
+    color: var(--accent-darkGreen);
+}
+&_url{
+   color: var(--accent-pink); 
+}
+        }
+    }
+  }
+
+  .game_section {
+            width: 510px;
+    height: 475px;
+    background: red;
+  }
+}
