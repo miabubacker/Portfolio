@@ -15,5 +15,10 @@
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .MainPage_container {
     margin: 15px;
+    z-index: 0;
+  }
+  .menubar{
+     position: fixed;
+     width: 90%;
   }
 }

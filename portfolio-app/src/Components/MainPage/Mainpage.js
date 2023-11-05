@@ -9,7 +9,7 @@ import './MainPage.scss'
 import Contact from "../Pages/Contact/Contact";
 
 export default function Mainpage(props) {
-    const { MainPageActions, loading } = props
+    const { MainPageActions, loading ,hamburger} = props
     useEffect(() => {
         setTimeout(() => {
             MainPageActions.loading()
@@ -17,7 +17,7 @@ export default function Mainpage(props) {
     }, [])
     return (
         <React.Fragment>
-            <section className="MainPage_container">
+            <section className={ hamburger?"MainPage_container menubar":"MainPage_container"}>
                 {loading ?
                     <>
                         <Header {...props} /><Routes>

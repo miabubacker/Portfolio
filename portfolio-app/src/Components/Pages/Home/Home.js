@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.scss'
 export default function Home(props) {
+   
   return (
   <section className='Home_container'>
     <section className='infoSection'>

@@ -1,3 +1,4 @@
 export const ACTION_TYPES = {
-    LOADER:'LOADER'
+    LOADER:'LOADER',
+    MENUBAR:"MENUBAR"
 }
