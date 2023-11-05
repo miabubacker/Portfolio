@@ -4,6 +4,7 @@ import { produce } from "immer";
 
 const initialState = {
   loading: false,
+  hamburger:false,
   dashboard:[],
    home:[],
    about:[],
@@ -16,6 +17,11 @@ export default handleActions(
     [ACTION_TYPES.LOADER]: (state, { data } = {}) =>
       produce(state, (draft) => {
         draft.loading = true;
+      }),
+
+      [ACTION_TYPES.MENUBAR]: (state, { data } = {}) =>
+      produce(state, (draft) => {
+        draft.hamburger = !state.hamburger;
       }),
 
 

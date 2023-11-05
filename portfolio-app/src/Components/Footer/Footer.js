@@ -7,7 +7,7 @@ import "./Footer.scss"
 export default function Footer() {
   return (
     <section className="footer_section">
-      <div className="footer_container container">
+      <div className="footer_container">
         <div className="footer footer_socialLinks">
           <div className="footer_socialLogo">
             <h4>find me in:</h4>

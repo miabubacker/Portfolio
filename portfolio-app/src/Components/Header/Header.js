@@ -9,25 +9,28 @@ import GithubFillIcon from "remixicon-react/GithubFillIcon";
 
 export default function Header(props) {
   const navigate = useNavigate();
-  const { headers } = props;
+  const { headers ,MainPageActions,hamburger} = props;
+   console.log(props)
   const [selectPage, setSelectPage] = useState(0);
-  const [drawer, setDrawer] = useState(false);
+  // const [drawer, setDrawer] = useState(false);
   const viewPage = (heder, index) => {
      if(heder==='_hello'){
       navigate('/');
       setSelectPage(index);
-    setDrawer(false)
+      MainPageActions.menubar()
+    // setDrawer(false)
      }
      else{
     navigate(`/${heder}`);
     setSelectPage(index);
-    setDrawer(false)
+    MainPageActions.menubar()
+    // setDrawer(false)
      }
   };
   const ViewDrawer = (event) => {
     event.stopPropagation();
-    setDrawer(!drawer);
-    console.log("ss");
+    MainPageActions.menubar()
+    // setDrawer(!drawer);
   };
   return (
     <div className="headermain">
@@ -69,7 +72,7 @@ export default function Header(props) {
       </section>
 
       {/* moile */}
-      <div className={!drawer ? "mobile" : "mobile View"}>
+      <div className={!hamburger ? "mobile" : "mobile View"}>
         <div className="mobilecontainer">
           <section className="mbheader_container">
           <div  className="mbtop">
@@ -107,9 +110,9 @@ export default function Header(props) {
           <div  className="mbfooter">
             <div className="findme">find me in:</div>
             <div className="socialmedia">
-                <div className="socialIcon"><TwitterFillIcon /></div>
-                <div className="socialIcon"><FacebookFillIcon /></div>
-                <div className="socialIcon"><GithubFillIcon /></div>
+                <div className="socialIcon"><TwitterFillIcon  color="#607B96"/></div>
+                <div className="socialIcon"><FacebookFillIcon color="#607B96"/></div>
+                <div className="socialIcon"><GithubFillIcon  color="#607B96"/></div>
             </div>
           </div>
         </div>
