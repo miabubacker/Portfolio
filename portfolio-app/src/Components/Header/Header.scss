@@ -3,10 +3,11 @@
   .mobile {
     background: var(--primary-middle);
     // height: 100vh;
-    right: -345px;
+    right: -100%;
     position: fixed;
+    opacity: 0;
     top: 0;
-    width: 345px;
+    // width: 345px;
     display: none;
     border-radius: 8px;
     border: 1px solid var(--page-bg-color);
@@ -134,11 +135,10 @@
   
       display: block;
       right: 0;
+      left: 0;
       //   margin: 15px;
       margin: 15px;
       height: 94%;
-      width: 100%;
-      max-width: 92%;
       z-index: 1;
       .mbfooter {
         border-top: 1px solid var(--page-bg-color);

@@ -16,9 +16,13 @@
   .MainPage_container {
     margin: 15px;
     z-index: 0;
+    // opacity: 0;
   }
   .menubar{
-     position: fixed;
-     width: 90%;
+    //  position: fixed;
+    height: 0;
+    width: 0;
+   
+
   }
 }
