@@ -7,3 +7,6 @@ export const loading=()=>(dispatch)=>{
    export const menubar=()=>(dispatch)=>{
     dispatch({ type: ACTION_TYPES.MENUBAR });
    }
+    export const selectedProject=(payload)=>(dispatch)=>{
+        dispatch({ type: ACTION_TYPES.PROJECT ,data:payload});
+       }
