@@ -20,6 +20,10 @@ const mapStateToProps = ({
     loading: _get(MainPagereducer, 'loading'),
     headers:_get(MainPagereducer, 'headers'),
     hamburger:_get(MainPagereducer, 'hamburger'),
+    projects:_get(MainPagereducer, 'projects'),
+    filterProjects:_get(MainPagereducer, 'filterProjects'),
+    typeofProject:_get(MainPagereducer, 'typeofProject'),
+    
 
 });
 

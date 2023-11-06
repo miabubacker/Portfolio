@@ -1,4 +1,5 @@
 export const ACTION_TYPES = {
     LOADER:'LOADER',
-    MENUBAR:"MENUBAR"
+    MENUBAR:"MENUBAR",
+    PROJECT:'PROJECT'
 }
