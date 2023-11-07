@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Checkbox } from "antd";
 import CloseFillIcon from "remixicon-react/CloseFillIcon"
 import "./Project.scss";
+import { selectedProject } from "../../MainPage/MainPage.actionHandler";
 
 
 export default function Project(props) {
@@ -23,7 +24,9 @@ export default function Project(props) {
     );
   }, [selectproject]);
 
-
+const closeBtn=()=>{
+  setSelectProject([])
+}
   return (
     <>
       <section className="Project_section">
@@ -36,6 +39,7 @@ export default function Project(props) {
                 onChange={(e) => {
                   handleCheckbox(e.target.value);
                 }}
+                checked={selectproject.includes(domain.name.toLowerCase())}
                 value={domain.name.toLowerCase()}
               >
               </Checkbox>
@@ -47,16 +51,15 @@ export default function Project(props) {
         <div className="Projects">
           <div className="Project_title">
             {/*  header */}
-            <div>
+            {selectproject.length>0&&<div>
               {selectproject.map((data) => (
                 <span key={data}>{data};</span>
               ))}
               <CloseFillIcon className="closeBtn" size={18}
-                onClick={(e) => {
-
-                }}
+                onClick={() => {closeBtn()}}
               />
             </div>
+}
 
           </div>
           {/* projects */}
