@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Checkbox } from "antd";
+import CloseFillIcon from "remixicon-react/CloseFillIcon"
 import "./Project.scss";
-// import cardImg from "../../assets/Img/cardImg.svg";
-// import gameCard from "../../assets/Img/cardImggame.svg";
-// import cardEteram from "../../assets/Img/cardImgEtheram.svg";
+
 
 export default function Project(props) {
   const { typeofProject, projects, MainPageActions, filterProjects } = props;
@@ -17,69 +16,81 @@ export default function Project(props) {
       setSelectProject([...select, filterproject]);
     }
   };
+
   useEffect(() => {
     MainPageActions.selectedProject(
       projects.filter((data) => selectproject.indexOf(data.project) !== -1)
     );
   }, [selectproject]);
 
+
   return (
-    <section className="Project_section">
-      {/* leftcolumn */}
-      {typeofProject.map((domain, index) => (
-        <div key={index} className="left_main">
-          <div>{domain.icon}</div>
-          <Checkbox
-            onChange={(e) => {
-              handleCheckbox(e.target.value);
-            }}
-            value={domain.name.toLowerCase()}
-          >
-            {domain.name}
-          </Checkbox>
+    <>
+      <section className="Project_section">
+        {/* leftcolumn */}
+        <div className="Project_menu">
+          <h4>Projects</h4>
+          {typeofProject.map((domain, index) => (
+            <div key={index} className="left_main">
+              <Checkbox
+                onChange={(e) => {
+                  handleCheckbox(e.target.value);
+                }}
+                value={domain.name.toLowerCase()}
+              >
+              </Checkbox>
+              <div>{domain.icon}</div>
+              <div><p>{domain.name}</p></div>
+            </div>
+          ))}
         </div>
-      ))}
-      {/*  header */}
-      <div>
-        {selectproject.map((data) => (
-          <span key={data}>{data};</span>
-        ))}
-      </div>
-      {/* projects */}
-      {(filterProjects.length > 0 ? filterProjects : projects).map(
-        (project, index) => (
-          <div className="card_container">
-            <div>Project {index + 1}</div>
-            <div>{project.title}</div>
-            <div>{project.about_us}</div>
-            <button
-              onClick={() => {
-                window.open(project.project_link, "_blank");
-              }}
-            >
-              view Product
-            </button>
-          </div>
-        )
-      )}
-      {/* {cardData.map((data, index) => {
-        return (
-          <>
-            <div className="card_container">
-              <h6 key={index}>{data.title}</h6>
-              <div className="cards">
-                <img key={index} src={data.cardImg} alt="" />
-                <div className="cards_Body">
-                  <p key={index}>{data.description}</p>
-                  <button>view-project</button>
-                </div>
-              </div>
+        <div className="Projects">
+          <div className="Project_title">
+            {/*  header */}
+            <div>
+              {selectproject.map((data) => (
+                <span key={data}>{data};</span>
+              ))}
+              <CloseFillIcon className="closeBtn" size={18}
+                onClick={(e) => {
+
+                }}
+              />
             </div>
 
-          </>
-        )
-      }
-      )} */}
-    </section>
+          </div>
+          {/* projects */}
+          <div className="Project_cards">
+            {(filterProjects.length > 0 ? filterProjects : projects).map(
+              (project, index) => (
+                <div className="card_container">
+                  <div><span className="ProjectName">Project-{index + 1}:</span> <span className="ProjectTitle">// _{project.title}</span></div>
+                  <div className="cards">
+                    <img src={project.img} alt="" />
+                    <div className="cards_Icon" style={{ position: "absolute", top: 24, right: 20 }}><i>{project.Project_Icon}</i></div>
+
+                    <div className="cards_Body">
+                      <p>{project.about_us}</p>
+                      <button
+                        onClick={() => {
+                          window.open(project.project_link, "_blank");
+                        }}
+                      >
+                        view Product
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              )
+            )}
+          </div>
+        </div>
+        <div className="empty">
+          <div className="bar"></div>
+        </div>
+      </section>
+
+    </>
   );
 }

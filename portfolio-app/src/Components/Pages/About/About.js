@@ -3,7 +3,7 @@ import "./About.scss";
 import TerminalBoxFillIcon from "remixicon-react/TerminalBoxFillIcon";
 import User4FillIcon from "remixicon-react/User4FillIcon";
 import GamepadFillIcon from "remixicon-react/GamepadFillIcon";
-import { Collapse, theme } from "antd";
+import { Collapse } from "antd";
 import CloseFillIcon from "remixicon-react/CloseFillIcon";
 import ArrowDownSFillIcon from "remixicon-react/ArrowDownSFillIcon";
 import MailFillIcon from "remixicon-react/MailFillIcon";
