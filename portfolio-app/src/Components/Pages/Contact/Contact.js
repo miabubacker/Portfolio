@@ -41,11 +41,11 @@ console.log(lineCount)
   );
   const shareAccount = () => (
     <div className="contact_main">
-      <div className="contact_detail">
+      <div className="contact_detail" onClick={()=>{ window.open('https://github.com/dashboard', "_blank");}}>
         <ShareBoxFillIcon className="fontsize" />
         github
       </div>
-      <div className="contact_detail">
+      <div className="contact_detail"  onClick={()=>{ window.open('https://www.instagram.com',"_blank")}} >
         <ShareBoxFillIcon className="fontsize" />
         instagram account
       </div>
