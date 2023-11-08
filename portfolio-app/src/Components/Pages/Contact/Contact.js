@@ -197,7 +197,7 @@ console.log(lineCount)
              <span className="brackets">{`})`}</span>
               </div>
             </div>
-            <div className="empty">
+            <div className="emptycontact">
             <div className="bar"></div>
             </div>
           </div>

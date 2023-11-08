@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.scss";
+import Board from "./Game/Board";
+
 export default function Home(props) {
   return (
     <section className="Home_container">
@@ -15,15 +17,20 @@ export default function Home(props) {
             // you can also see it on my Github page
           </div>
           <div className="gitlink">
-            <span className="gitlink_const">const</span>{" "}
-            <span className="gitlink_link">githubLink</span> ={" "}
-            <span className="gitlink_url">
+          <span className="gitlink_const">const</span> <span className="gitlink_link">githubLink</span> <span>=</span>             <span className="gitlink_url">
               “https://github.com/miabubacker/learning-plotFrom.git”
             </span>
+            {/* <span className="gitlink_const">const</span>
+            <span className="gitlink_link">githubLink</span> =
+            <span className="gitlink_url">
+              “https://github.com/miabubacker/learning-plotFrom.git”
+            </span> */}
           </div>
         </div>
       </section>
-      <section className="game_section"></section>
+      <section className="game_section">
+      <Board/>
+      </section>
     </section>
   );
 }
