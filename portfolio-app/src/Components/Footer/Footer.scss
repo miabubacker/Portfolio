@@ -50,18 +50,18 @@
   }
 }
 @media screen and (min-width: 320px) and (max-width: 425px) {
-    .footer_githubID{
-        padding: 11px 14px;
-        width: auto;
-        border:none ;
-        & h4{
-        display: none;
+  .footer_githubID {
+    padding: 11px 14px;
+    width: auto;
+    border: none;
+    & h4 {
+      display: none;
     }
-   
+  }
+  .footer_socialLogo {
+    & h4 {
+      font-size: 16px;
+      padding: 13px 65px 15px 18px;
     }
-     .footer_socialLogo{
-        & h4{
-            padding: 13px 25px 15px 18px;
-        }
-    }
+  }
 }
