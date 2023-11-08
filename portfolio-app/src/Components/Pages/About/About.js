@@ -39,7 +39,6 @@ export default function About(props) {
     <div>
       <div className="comment_header">
         <div className="topimg_details">
-          {" "}
           <div>
             <img src={profileIcon} />
           </div>
@@ -62,10 +61,9 @@ export default function About(props) {
       <div className="message">
         {/* <div className='msg_content'> */}
         <div>
-          {" "}
           <span className="function">function</span> initializeModelChunk
           {<span className="T">{`<T>`}</span>}(chunk: ResolvedModelChunk): T{" "}
-          {`{`}{" "}
+          {`{`}
         </div>
         <div className="insideFunction">
           const value: <span className="function">T</span> ={" "}
