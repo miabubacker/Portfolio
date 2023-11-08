@@ -17,8 +17,10 @@ export default function Home(props) {
             // you can also see it on my Github page
           </div>
           <div className="gitlink">
-          <span className="gitlink_const">const</span> <span className="gitlink_link">githubLink</span> <span>=</span>             <span className="gitlink_url">
-              “https://github.com/miabubacker/learning-plotFrom.git”
+          <span className="gitlink_const">const</span> <span className="gitlink_link">githubLink</span> <span>=</span>             <span className="gitlink_url"   onClick={() => {
+                          window.open('https://github.com/dashboard', "_blank");
+                        }}>
+              “https://github.com/dashboard”
             </span>
             {/* <span className="gitlink_const">const</span>
             <span className="gitlink_link">githubLink</span> =
