@@ -82,9 +82,10 @@
     .main_drawer {
       display: flex;
       height: 94%;
+      width: 100%;
 
       .formsection {
-        width: 50%;
+        width: 48%;
         // margin: 10px auto;
         border-right: 1px solid var(--page-bg-color);
         //   height: 100%;
@@ -182,7 +183,7 @@
         }
       }
       .code_snippet {
-        width: 50%;
+        width: 64%;
         display: flex;
         .snippet {
           //  width: 100%;
