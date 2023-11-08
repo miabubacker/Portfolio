@@ -42,11 +42,11 @@ export default function Contact() {
 
   const shareAccount = () => (
     <div className="contact_main">
-      <div className="contact_detail">
+      <div className="contact_detail" onClick={()=>{ window.open('https://github.com/dashboard', "_blank");}}>
         <ShareBoxFillIcon className="fontsize" />
         github
       </div>
-      <div className="contact_detail">
+      <div className="contact_detail"  onClick={()=>{ window.open('https://www.instagram.com',"_blank")}} >
         <ShareBoxFillIcon className="fontsize" />
         instagram account
       </div>
@@ -196,8 +196,8 @@ export default function Contact() {
                 <span className="brackets">{`})`}</span>
               </div>
             </div>
-            <div className="empty">
-              <div className="bar"></div>
+            <div className="emptycontact">
+            <div className="bar"></div>
             </div>
           </div>
         </div>

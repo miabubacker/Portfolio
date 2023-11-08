@@ -17,7 +17,7 @@ export default function Footer() {
               />
           </div>
           <div className="footer_githubID" >
-            <h4>@username</h4>
+            <h4  onClick={()=>{ window.open('https://github.com/dashboard', "_blank");}} >miabubacker</h4>
             <GithubFillIcon className='footer_githubID_logo' size={25} />
           </div>
         </div>
