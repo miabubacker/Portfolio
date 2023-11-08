@@ -44,7 +44,7 @@
   height: 830px;
   .Project_menu {
     border-right: 1px solid #1e2d3d;
-    width: 311px;
+    min-width: 311px;
     & h4 {
       border-bottom: 1px solid #1e2d3d;
       height: 40px;

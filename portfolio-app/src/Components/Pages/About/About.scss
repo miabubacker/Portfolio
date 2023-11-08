@@ -325,8 +325,7 @@
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .aboutsection {
     flex-direction: column;
-    // height: max-content;
-    min-height: auto;
+    height: 100%;
     .left_icon {
       display: none;
     }
