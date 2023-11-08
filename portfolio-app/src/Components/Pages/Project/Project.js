@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Checkbox } from "antd";
+import { Checkbox,Collapse } from "antd";
 import CloseFillIcon from "remixicon-react/CloseFillIcon"
+import ArrowDownSFillIcon from "remixicon-react/ArrowDownSFillIcon";
 import "./Project.scss";
 import { selectedProject } from "../../MainPage/MainPage.actionHandler";
 
 
 export default function Project(props) {
+  const { Panel } = Collapse
   const { typeofProject, projects, MainPageActions, filterProjects } = props;
   const [selectproject, setSelectProject] = useState([]);
   const handleCheckbox = (filterproject) => {
@@ -29,11 +31,33 @@ const closeBtn=()=>{
 }
   return (
     <>
+    
       <section className="Project_section">
+
+        
+
         {/* leftcolumn */}
         <div className="Project_menu">
-          <h4>Projects</h4>
-          {typeofProject.map((domain, index) => (
+        <Collapse
+          bordered={false}
+          className="projectCollapse"
+          defaultActiveKey={["1"]}
+          expandIcon={({ isActive }) => (
+            <div>
+              <ArrowDownSFillIcon
+                className={`${isActive
+                    ? "collapseHeaderIconExpand"
+                    : "collapseHeaderIconCollapse"
+                  }`}
+              />
+            </div>
+          )}
+          expandIconPosition="left"
+          onChange={() => { }}
+        >
+        <Panel key="1" header="Projects">
+            {/* <div> */}
+            {typeofProject.map((domain, index) => (
             <div key={index} className="left_main">
               <Checkbox
                 onChange={(e) => {
@@ -47,7 +71,11 @@ const closeBtn=()=>{
               <div><p>{domain.name}</p></div>
             </div>
           ))}
+            {/* </div> */}
+          </Panel>
+          </Collapse>
         </div>
+
         <div className="Projects">
           <div className="Project_title">
             {/*  header */}
@@ -89,7 +117,7 @@ const closeBtn=()=>{
             )}
           </div>
         </div>
-        <div className="empty">
+        <div className="Pro_empty">
           <div className="bar"></div>
         </div>
       </section>

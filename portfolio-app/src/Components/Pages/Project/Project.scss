@@ -1,4 +1,32 @@
 .Project_section {
+  .projectCollapse {
+    .collapseHeaderIconCollapse {
+      transition: 0.3s all linear;
+      transform: rotate(-90deg);
+      color: var(--secondary-white);
+    }
+    .collapseHeaderIconExpand {
+      transition: 0.3s all linear;
+      transform: rotate(0);
+      color: var(--secondary-white);
+    }
+    .ant-collapse-header {
+      height: 40px;
+      padding: 8px;
+
+      border-bottom: 1px solid var(--page-bg-color);
+      span.ant-collapse-header-text {
+        font-size: 16px;
+      }
+    }
+    .ant-collapse-content-box {
+      // border-bottom: 1px solid var(--page-bg-color);
+    }
+    .ant-collapse-header-text {
+      font-size: var(--lables);
+      color: var(--secondary-white);
+    }
+  }
   ::-webkit-scrollbar {
     width: 6px;
   }
@@ -13,7 +41,7 @@
   }
   display: flex;
   color: #607b96;
-  height: 100%;
+  height: 830px;
   .Project_menu {
     border-right: 1px solid #1e2d3d;
     width: 311px;
@@ -35,7 +63,7 @@
 
   .Project_cards {
     overflow-y: scroll;
-    height: 941px;
+    height: 780px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -116,7 +144,7 @@
   }
 }
 
-.empty {
+.Pro_empty {
   margin-top: 40px;
   width: 26px;
   border-left: 1px solid var(--page-bg-color);
@@ -125,5 +153,43 @@
     height: 7px;
     margin: 5px 3px;
     background: var(--secondary-gray);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .Project_section {
+    height: auto;
+    flex-wrap: wrap;
+    .left_main {
+      padding: 0 10px;
+    }
+    .Project_cards {
+      // overflow: hidden;
+      height: fit-content;
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+    .Project_menu {
+      width: 100%;
+    }
+    .card_container {
+      .cards {
+        width: 291px;
+      }
+      &_Body p {
+        padding: 31px 23px 31px 29px;
+      }
+    }
+  }
+  .Pro_empty {
+    display: none;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .Project_section {
+    height: auto;
+    &_cards {
+      height: auto;
+    }
   }
 }
