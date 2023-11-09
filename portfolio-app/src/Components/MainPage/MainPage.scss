@@ -3,8 +3,9 @@
   border-radius: 8px;
   border: 1px solid var(--page-bg-color);
   background: var(--primary-middle);
-  overflow: hidden;
+  // overflow: hidden;
 
+   height: 942px;
   .loading {
     display: flex;
     height: 100px;
@@ -13,19 +14,26 @@
     justify-content: center;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .MainPage_container{
+    height: 100%;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .MainPage_container {
     margin: 15px;
+    height: 100% !important;
     z-index: 0;
     // opacity: 0;
   }
   .menubar{
     //  position: fixed;
-    height: 0;
+    height: 0 !important;
     width: 0;
     background:var( --bg-overlap);
     margin: 0;
     padding: 0;
+    overflow: hidden;
    
 
   }
