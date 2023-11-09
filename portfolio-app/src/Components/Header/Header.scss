@@ -66,12 +66,18 @@
           padding-right: 31px;
           align-self: center;
           border-right: 1px solid var(--page-bg-color);
+          transition: all 0.2s linear;
         }
         .selectedpage {
           color: var(--secondary-white);
           border-bottom: 3px solid var(--accent-gold);
         }
+        &_child:hover{
+          color: var(--secondary-white);
+          border-bottom: 3px solid var(--accent-gold);
+        }
       }
+      
     }
     .contactus {
       height: 100%;
@@ -80,6 +86,12 @@
       border-left: 1px solid var(--page-bg-color);
       display: flex;
       align-items: center;
+      cursor: pointer;
+      transition: all 0.2s linear;
+    }
+    .contactus:hover{
+      color: var(--secondary-white);
+      border-bottom: 3px solid var(--accent-gold);
       cursor: pointer;
     }
     .selected {
