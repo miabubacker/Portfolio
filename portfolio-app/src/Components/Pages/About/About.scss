@@ -324,10 +324,32 @@
 }
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .aboutsection {
+     height: 86vh;
+     overflow: hidden;
+     .personal_info{
+       .personal_about{
+        height: 94%;
+        .personal_detail{
+          margin-left: 0;
+          .num{
+             display: none;
+          }
+          .text{
+            width: 100%;
+             font-size: 16px;
+             padding: 40px;
+          }
+        }
+       }
+     }
     .code_snippet {
+      width: 43%;
+       overflow: hidden;
       .sinppetmain {
+        height: 96%;
         .snipet {
           width: 90%;
+           overflow: scroll;
           margin: 0px 25.5px;
           margin-top: 17px;
           .comments{
@@ -347,6 +369,7 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   .aboutsection {
+     height: 80%;
     .personal_info {
       width: 100%;
       .personal_detail {
