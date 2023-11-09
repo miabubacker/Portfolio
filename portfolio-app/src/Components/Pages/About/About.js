@@ -203,7 +203,7 @@ export default function About(props) {
         </div>
         <div className="personal_about">
           <div className="personal_detail">
-            <div>
+            <div className="num">
               {numbers().map((num,index) => (
                 <span key={index}>
                   {num}

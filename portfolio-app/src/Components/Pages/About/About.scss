@@ -324,8 +324,27 @@
 }
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .aboutsection {
+     height: 80%;
+     overflow: hidden;
+     .personal_info{
+       .personal_about{
+        height: 96%;
+        .personal_detail{
+          margin-left: 0;
+          .num{
+             display: none;
+          }
+          .text{
+            width: 100%;
+             font-size: 16px;
+             padding: 20px;
+          }
+        }
+       }
+     }
     .code_snippet {
       .sinppetmain {
+        height: 96%;
         .snipet {
           width: 90%;
           margin: 0px 25.5px;
@@ -347,6 +366,7 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   .aboutsection {
+     height: 80%;
     .personal_info {
       width: 100%;
       .personal_detail {
