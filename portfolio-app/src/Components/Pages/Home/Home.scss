@@ -2,10 +2,11 @@
   display: flex;
   // width: 100%;
   // height: 794px;
-  height: 100%;
-  // justify-content: center;
-// align-items: center;
-margin: 180px 311px;
+  // height: 100%;
+  // align-items: center;
+  // margin: 180px 311px;
+  height: 834px;
+  padding: 180px 311px;
   .infoSection {
     .top_component {
       .Welcome {
@@ -32,34 +33,35 @@ margin: 180px 311px;
         line-height: normal;
       }
     }
-    .lower_component{
-        margin-top: 81.07px;
-        .game_continue,.github_name{
-            color: var(--secondary-gray);
-font-size: var(--lables);
-font-style: normal;
-font-weight: 450;
-line-height: normal;
-margin-bottom:  11px;
+    .lower_component {
+      margin-top: 81.07px;
+      .game_continue,
+      .github_name {
+        color: var(--secondary-gray);
+        font-size: var(--lables);
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        margin-bottom: 11px;
+      }
+      .gitlink {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--secondary-white);
+        width: 490px;
+        word-wrap: break-word;
+        &_const {
+          color: var(--secondary-lavender);
         }
-        .gitlink{
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
- color: var(--secondary-white);
- width: 490px;
- word-wrap: break-word;
-&_const{
-    color: var(--secondary-lavender);
-}
-&_link{
-    color: var(--accent-darkGreen);
-}
-&_url{
-   color: var(--accent-pink); 
-}
+        &_link {
+          color: var(--accent-darkGreen);
         }
+        &_url {
+          color: var(--accent-pink);
+        }
+      }
     }
   }
 
@@ -71,38 +73,92 @@ line-height: normal;
   }
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .Home_container {
+    // margin: 80px 0;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    .game_section {
+      height: fit-content;
+      margin: 0;
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .Home_container {
+    // margin: 40px 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    .infoSection {
+      .top_component {
+        .name_header {
+          width: auto;
+           font-size: 50px;
+        }
+      }
+    }
+
+    .game_section {
+      height: fit-content;
+      margin: 0;
+      // margin-left: 20px;
+       display: flex;
+       justify-content: center;
+       width: 40%;
+       .gameContainer{
+         width: 60%;
+         height: 60%;
+       }
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .Home_container {
+    // margin: 80px 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .game_section {
+      height: fit-content;
+      margin: 0;
+    }
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 425px) {
-  .Home_container{
-     display: block;
-     padding: 0 !important;
-     margin: 0;
-     .game_section{
-       display: none;
-     }
-     .infoSection{
-       margin: 0 27px;
-       margin-top: 96px;
-      .top_component{
-       .Welcome{
-         margin-bottom: 10px;
-       }
-       .name_header{
-         width: 100%;
-         word-wrap: break-word;
-         font-size: 60px;
-       }
-       .domain_name{
-         margin-top: 10px;
-       }
+  .Home_container {
+    display: block;
+    padding: 0 !important;
+    margin: 0;
+    height: 100% !important;
+    .game_section {
+      display: none;
+    }
+    .infoSection {
+      margin: 0 27px;
+      margin-top: 96px;
+      .top_component {
+        .Welcome {
+          margin-bottom: 10px;
+        }
+        .name_header {
+          width: 100%;
+          word-wrap: break-word;
+          font-size: 60px;
+        }
+        .domain_name {
+          margin-top: 10px;
+        }
       }
-      .lower_component{
-         margin-top: 191px;
+      .lower_component {
+        margin-top: 191px;
         margin-bottom: 85px;
-          font-size: 14px;
-          .gitlink{
-            width: 100%;
-          }
+        font-size: 14px;
+        .gitlink {
+          width: 100%;
+        }
       }
-     }
+    }
   }
 }
