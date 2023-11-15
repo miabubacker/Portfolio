@@ -17,13 +17,13 @@
     &_twitter {
       border-left: 1px solid var(--page-bg-color);
       border-right: 1px solid var(--page-bg-color);
-      height: 50px;
+      height: 100%;
       width: 50px;
       padding: 11px 14px;
     }
     &_Facebook {
       border-right: 1px solid var(--page-bg-color);
-      height: 50px;
+      height: 100%;
       width: 50px;
       padding: 11px 14px;
     }
@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
 
-    height: 50px;
+    height: 100%;
     column-gap: 5px;
     width: 180px;
     padding-right: 23px;

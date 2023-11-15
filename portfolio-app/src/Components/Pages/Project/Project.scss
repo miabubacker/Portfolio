@@ -1,4 +1,5 @@
 .Project_section {
+  height: 90vh;
   .toptitle {
     display: none;
   }
@@ -153,9 +154,22 @@
     background: var(--secondary-gray);
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .Project_section {
     height: 86vh;
+     overflow: hidden;
+     .Project_cards{
+      height: 100%;
+       overflow:scroll;
+     }
+    &_cards {
+      height: auto;
+    }
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .Project_section {
+    height: 88vh;
      overflow: hidden;
      .Project_cards{
       height: 100%;

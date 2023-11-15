@@ -5,7 +5,8 @@
   background: var(--primary-middle);
   // overflow: hidden;
 
-   height: 942px;
+  //  min-height: 942px;
+   height: 100vh;
   .loading {
     display: flex;
     height: 100px;
@@ -16,7 +17,7 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .MainPage_container{
-    height: 76%;
+    height: 100vh;
     overflow: hidden;
   }
 }
