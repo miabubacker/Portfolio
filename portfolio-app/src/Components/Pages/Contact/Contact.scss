@@ -247,14 +247,14 @@
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .contact_section {
     // height: 88%;
-    height: 88vh;
+    height: 86vh;
     overflow: hidden;
     .right_container{
        .main_drawer{
         width: 100%;
         .formsection{
           //  width: 100%;
-           overflow: scroll;
+          //  overflow: scroll;
         }
         .code_snippet{
           //  width: 100%;
@@ -264,6 +264,7 @@
             margin: 0;
             margin: 115px 0;
            padding-left: 32px;
+            overflow-y: scroll;
              .sinpped_code{
                width: 100%;
                margin-right: 32px;

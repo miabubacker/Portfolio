@@ -6,7 +6,7 @@
   // align-items: center;
   // margin: 180px 311px;
 //  min-height: 834px;
- height: 90vh;
+ height: 90%;
   padding: 180px 311px;
   .infoSection {
     .top_component {
@@ -124,11 +124,22 @@
   .Home_container {
 
     height: 86vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 60px;
     .game_section {
-      height: fit-content;
-      margin: 0;
+      // height: fit-content;
+      // margin: 0;
+       display: none;
     }
   }
+}
+@media screen and (min-width: 1921px){
+.Home_container{
+   justify-content: center;
+   align-items: center;
+}
 }
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .Home_container {
@@ -138,7 +149,7 @@
     padding: 60px;
  
     // height: 88%;
-    height: 88vh;
+    height: 86vh;
     .game_section {
       height: fit-content;
       margin: 0;

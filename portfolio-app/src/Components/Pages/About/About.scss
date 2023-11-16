@@ -2,8 +2,8 @@
   width: 100%;
   // height: 100%;
   // height: 830px;
-  height: 90vh;
-  // overflow: hidden;
+  height: 90%;
+  overflow: hidden;
   display: flex;
   .smTop {
     display: none;
@@ -328,7 +328,7 @@
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .aboutsection {
     //  height: 88%;
-    height: 88vh;
+    height: 86vh;
      overflow: hidden;
      .personal_info{
       width: 50%;
@@ -338,7 +338,7 @@
 
         .personal_detail{
           margin-left: 0;
-          overflow: scroll;
+          overflow-y: scroll;
           .num{
              display: none;
           }
@@ -358,7 +358,7 @@
         height: 94%;
         .snipet {
           width: 90%;
-           overflow: scroll;
+           overflow-y: scroll;
           margin: 0px 25.5px;
           margin-top: 17px;
           .comments{

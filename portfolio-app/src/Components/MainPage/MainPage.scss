@@ -3,7 +3,7 @@
   border-radius: 8px;
   border: 1px solid var(--page-bg-color);
   background: var(--primary-middle);
-  // overflow: hidden;
+  overflow: hidden;
 
   //  min-height: 942px;
    height: 100vh;
@@ -17,7 +17,7 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .MainPage_container{
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
   }
 }

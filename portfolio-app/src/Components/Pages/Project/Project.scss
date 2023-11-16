@@ -71,7 +71,7 @@
     padding-bottom: 328px;
     margin: 0 auto;
     gap: 40px;
-    border-right: 1px solid #1e2d3d;
+    // border-right: 1px solid #1e2d3d;
   }
   .card_container {
     & .ProjectName {
@@ -169,7 +169,7 @@
 }
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .Project_section {
-    height: 88vh;
+     height: 86vh;
      overflow: hidden;
      .Project_cards{
       height: 100%;
