@@ -1,8 +1,9 @@
 .aboutsection {
   width: 100%;
   // height: 100%;
-  height: 830px;
-  // overflow: hidden;
+  // height: 830px;
+  height: 90%;
+  overflow: hidden;
   display: flex;
   .smTop {
     display: none;
@@ -71,6 +72,7 @@
     // width: 700px;
     border-right: 1px solid var(--page-bg-color);
     // min-width: 700px;
+    width: 50%;
 
     .personal_fileName {
       height: 50px;
@@ -96,7 +98,8 @@
       //  gap: 40px;
       //  margin-left: 38px;
       //  margin-top: 17px;
-      height: 94%;
+      height: 95%;
+      width: 100%;
       color: var(--secondary-gray);
       // width: 674px;
 
@@ -107,7 +110,7 @@
         margin-left: 38px;
         margin-top: 17px;
         gap: 32px;
-        // width: 100%;
+        width: 100%;
         font-size: var(--body-text);
         font-style: normal;
         font-weight: 450;
@@ -144,7 +147,7 @@
     .sinppetmain {
       display: flex;
       // width: 664px;
-      height: 94%;
+      height: 95%;
       .snipet {
         width: 90%;
         margin: 0 40.5px;
@@ -324,13 +327,18 @@
 }
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .aboutsection {
-     height: 86vh;
+    //  height: 88%;
+    height: 86vh;
      overflow: hidden;
      .personal_info{
+      width: 50%;
        .personal_about{
         height: 94%;
+     
+
         .personal_detail{
           margin-left: 0;
+          overflow-y: scroll;
           .num{
              display: none;
           }
@@ -343,13 +351,14 @@
        }
      }
     .code_snippet {
-      width: 43%;
+      // width: 43%;
+      width: 50%;
        overflow: hidden;
       .sinppetmain {
-        height: 96%;
+        height: 94%;
         .snipet {
           width: 90%;
-           overflow: scroll;
+           overflow-y: scroll;
           margin: 0px 25.5px;
           margin-top: 17px;
           .comments{
@@ -369,7 +378,7 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   .aboutsection {
-     height: 80%;
+     height: 86vh;
     .personal_info {
       width: 100%;
       .personal_detail {
