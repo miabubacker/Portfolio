@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./About.scss";
 import TerminalBoxFillIcon from "remixicon-react/TerminalBoxFillIcon";
 import User4FillIcon from "remixicon-react/User4FillIcon";
@@ -12,10 +12,11 @@ import ChatSmileFillIcon from "remixicon-react/ChatSmileFillIcon";
 import StarFillIcon from "remixicon-react/StarFillIcon";
 import profileIcon from "../../Assets/Img/user_icon.svg";
 import CollapseComponent from "./CollapseComponent/CollapseComponent";
+import Aboutme from "./CollapseComponent/Aboutme";
 
 export default function About(props) {
   const { Panel } = Collapse;
-  // console.log('about',props)
+  const [lineCount, setLineCount] = useState(0);
   const contact = () => (
     <div className="contact_main">
       <div className="contact_detail">
@@ -30,7 +31,7 @@ export default function About(props) {
   );
   const numbers = () => {
     let size = [];
-    for (let i = 1; i < 17; i++) {
+    for (let i = 1; i <= lineCount; i++) {
       size.push(i);
     }
     return size;
@@ -212,33 +213,7 @@ export default function About(props) {
               ))}
             </div>
             <div className="text">
-              /**
-              <br />
-              * About me
-              <br />
-              * I have 5 years of еxperience in web
-              <br />
-              * development lorem ipsum dolor sit amet, <br />
-              * consectetur adipiscing elit, sed do eiusmod
-              <br />
-              * tempor incididunt ut labore et dolore
-              <br />
-              * magna aliqua. Ut enim ad minim veniam,
-              <br />
-              * quis nostrud exercitation ullamco laboris
-              <br />
-              * nisi ut aliquip ex ea commodo consequat.
-              <br />
-              * Duis aute irure dolor in reprehenderit in
-              <br />
-              *<br />
-              * Duis aute irure dolor in reprehenderit in
-              <br />
-              * voluptate velit esse cillum dolore eu fugiat <br />
-              * nulla pariatur. Excepteur sint occaecat <br />
-              * officia deserunt mollit anim id est laborum.
-              <br />
-              */
+              <Aboutme  lineCount={lineCount} setLineCount={setLineCount}/>
             </div>
           </div>
 

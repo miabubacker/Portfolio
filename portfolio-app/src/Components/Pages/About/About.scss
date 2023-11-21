@@ -334,13 +334,12 @@
       width: 50%;
        .personal_about{
         height: 94%;
-     
-
         .personal_detail{
-          margin-left: 0;
+          // margin-left: 0;
+          gap: 16px;
           overflow-y: scroll;
-          .num{
-             display: none;
+          .num{margin-top: 40px;
+            //  display: none;
           }
           .text{
             width: 100%;
