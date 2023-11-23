@@ -6,7 +6,8 @@
   overflow: hidden;
 
   //  min-height: 942px;
-   height: 100vh;
+  //  height: 100vh;
+  min-height: 100%;
   .loading {
     display: flex;
     height: 100px;

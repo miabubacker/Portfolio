@@ -6,7 +6,7 @@ export default function Home(props) {
   return (
     <section className="Home_container">
       <section className="infoSection">
-        <div className="top_component">
+        <div className="top_component" >
           <div className="Welcome">Hi all. I am</div>
           <h3 className="name_header">Abu backer Siddique</h3>
           <h5 className="domain_name"> {`>`} Front-end developer</h5>
