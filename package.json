@@ -9,7 +9,6 @@
     "antd": "^5.10.3",
     "compose": "^0.1.2",
     "connected-react-router": "^6.9.3",
-    "firebase": "^10.5.2",
     "immer": "^10.0.3",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
