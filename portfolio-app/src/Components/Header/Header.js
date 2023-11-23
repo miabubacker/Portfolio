@@ -20,6 +20,7 @@ export default function Header(props) {
       MainPageActions.menubar()
     // setDrawer(false)
      }
+     
      else{
     navigate(`/${heder}`);
     setSelectPage(index);
